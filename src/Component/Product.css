@@ -1,0 +1,146 @@
+.product{
+    padding: 20px;
+    border: 1px solid black;
+
+}
+
+
+/******* product-section3"  *********/
+
+.product-section3{
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.product-section3-banner img{
+  height: 570px;
+  width: 570px;
+}
+
+.product-section3-box{
+padding-top: 2rem;
+}
+.strMeal{
+    font-size: 24px;
+    color: #e16120;
+    font-weight: 700;
+    border-bottom: 2px solid #e16120;
+    padding: 10px 0px;
+
+}
+.strCategory2{
+    font-size: 19px;
+    display: flex;
+    gap: 11px;
+    padding-top: 1rem;
+
+}
+.strCategory2 span{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.strSource{
+    padding-top: 8px;
+    padding-bottom: 26px;
+
+}
+.strSource-anchor{
+    color: #383535;
+    font-size: 15px;
+}
+
+
+.tags{
+    display: flex;
+}
+.tags-heading{
+
+}
+.tags-headingBox{
+    border: 1px solid #e16120;
+    color: #e16120;
+    margin-left: 8px;
+    padding: 2px 7px;
+    border-radius: 3px;
+
+}
+
+.Ingredients{
+    background-color: #e16120;
+    width:496px;
+    padding: 30px;
+    color: white;
+    margin-top: 3rem;
+}
+.Ingredients-heading{
+    padding-bottom: 1rem;
+
+}
+.IngredientsBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 15px;
+    
+}
+.Ingredients-headingBox{
+    display: flex;
+    gap: 6px;
+    
+
+}
+
+.product-section4{
+    padding-top: 1rem;
+
+}
+.product-section4 h4{
+padding: 1rem 0rem;
+}
+.product-section4-box{
+    border: 1px solid gray;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px
+
+}
+.scp{
+    color: #e16120;
+}
+.product-headingBox{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    gap: 8px;
+
+}
+.product-section4-box li{
+    list-style: none;
+   
+}
+
+
+.product-section5{
+
+}
+.product-section5 h4{
+    padding: 1rem 0px;
+    
+}
+.product-section5 ul{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+.product-section5 ul li{
+    list-style: none;
+    padding: 8px 0px;
+
+}

@@ -1,0 +1,197 @@
+.main{
+
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(214, 63, 8);
+    color: white;
+    
+    position: relative;
+}
+.food-logo{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+.food-logo a{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    
+    
+}
+.food-logo a span{
+    font-size: 25px;
+}
+
+/*****************  Menu-Area        ******************/
+
+.menu{
+    
+
+}
+.menu-logo{
+    padding: 15px 20px;
+}
+.menu-box{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100vh;
+    width: 13rem;
+    padding:19px 30px;
+    display: none;
+}
+.close{
+    display: flex;
+    justify-content: end;
+}
+
+.menu-box ul{
+    
+}
+.menu-box ul li{
+    list-style: none;
+    border-bottom: 1px solid rgb(196, 191, 191);
+    padding: 10px 0px;
+}
+
+
+
+/*****************  Search-Area        ******************/
+
+
+.search-box{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    width: 100%;
+    height:400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Gotu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.search-input-box{
+    display: flex;
+    align-items: center;
+
+
+}
+.search-input-box input{
+    padding: 6px 10px;
+    max-width: 300px;
+    height: 44px;
+    width: 280px;
+    border: none;
+    outline: none;
+
+}
+.Search-icon{
+    background-color: rgb(214, 63, 8);
+    padding: 6px 10px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+.search-box h2{
+    font-size: 2.4em;
+    word-spacing: 8px;
+    padding: 30px 0px 20px 0px;
+}
+.search-box p{
+    
+}
+
+/***************    filter - Data        ***************/
+
+.filter-Data-Heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+.heading2{ 
+    display: inline-block;   
+    font-size: 26px;
+    letter-spacing: 4px;
+    
+}
+.filter-Data-Heading span{
+    display: inline-block; 
+    background-color: #e16120;
+    height: 4px;
+    width: 88px;
+    margin-top: 3px;
+}
+
+
+.filter-Data{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+
+
+}
+.filter-Data-box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 235px;
+    min-height: 300px;
+    margin-top: 4rem;
+    text-decoration: none;
+    
+}
+.filter-Data-Innerbox{
+    position: relative;
+
+}
+.strCategory{
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    background-color: white;
+    color: #e16120 !important;
+    border-radius: 4px;
+
+}
+
+.filter-Data-box img{
+    width: 100%;
+    height: 80%;
+    
+}
+.filter-Data-box p{
+    padding: 5px;
+    font-size: 16px;
+    color: gray;
+    
+}
+.filter-Data-box h3{
+    padding: 3px 5px;
+    font-size: 16px;
+    color: rgb(37, 37, 37);
+}

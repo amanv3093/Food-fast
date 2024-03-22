@@ -1,0 +1,42 @@
+
+.subCat-Data{
+   padding: 20px;
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.subCat-Data-box{
+  
+    
+   
+    margin-top: 4rem;
+    text-decoration: none;
+    
+}
+.subCat-Data-Innerbox{
+    width: 235px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 310px;
+
+}
+.strCategory{
+    
+    top: 8px;
+    right: 13px;
+    background-color: white;
+    color: #e16120 !important;
+    border-radius: 4px;
+
+}
+
+.subCat-Data-box img{
+    width: 100%;
+    height: 80%;
+    
+}
+.subCat-Data-box p{
+    padding:10px 5px;
+    font-size: 16px;
+    color: gray;
+    
+}
