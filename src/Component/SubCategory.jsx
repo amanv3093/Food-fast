@@ -23,7 +23,7 @@ function SubCategory() {
     console.log(subcategoryData);
   return (
     <div>
-       <Search />
+       
        <div className='subCat-Data'>
        
             <div className='filter-Data-Heading'>

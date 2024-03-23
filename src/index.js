@@ -8,13 +8,16 @@ import Product from './Component/Product';
 import Search from './Component/Search';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { FoodProvider } from './Context/Context';
+import Category from './Component/Category';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
  let routes = createBrowserRouter([
-  {path:'/',element:<App />},
+  {path:'/',element:<App />,children:[ 
+  {path:'/',element:<Category />},
   {path:'/SubCategory/:sub' , element:<SubCategory />},
   {path:'/Product/:idMeals' ,element:<Product />},
-  {path:'/Search/:idMeals' , element:<Search />}
+  {path:'/Search/:idMeals' , element:<Search />}]},
+  
 
  ])
 root.render(

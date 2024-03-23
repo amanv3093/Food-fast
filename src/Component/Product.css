@@ -1,27 +1,65 @@
 .product{
     padding: 20px;
-    border: 1px solid black;
+   
 
 }
+.product-section1{
+    background-color: #e16120;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding:15px;
+    gap: 7px;
+    margin-top: 2rem;
 
+}
+#section1-tags{
+    
+    color: white;
+}
+
+.filter-Data-Heading2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+}
+.heading3{ 
+    display: inline-block; 
+    font-size: 26px;
+    letter-spacing: 4px;  
+    
+}
+.filter-Data-Heading2 span{
+    display: inline-block; 
+    background-color: #e16120;
+    height: 4px;
+    width: 88px;
+    margin-top: 3px;
+    
+}
 
 /******* product-section3"  *********/
 
 .product-section3{
     display: flex;
     justify-content: space-around;
-    
+    gap: 25px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
+.product-section3-banner{
+    width: 100%;
+}
 .product-section3-banner img{
-  height: 570px;
-  width: 570px;
+  height: 100%;
+  width: 100%;
 }
 
 .product-section3-box{
 padding-top: 2rem;
+width: 100%;
 }
 .strMeal{
     font-size: 24px;
@@ -46,6 +84,7 @@ padding-top: 2rem;
 .strSource{
     padding-top: 8px;
     padding-bottom: 26px;
+    word-break: break-all;
 
 }
 .strSource-anchor{
@@ -71,7 +110,7 @@ padding-top: 2rem;
 
 .Ingredients{
     background-color: #e16120;
-    width:496px;
+    width:100%;
     padding: 30px;
     color: white;
     margin-top: 3rem;
@@ -143,4 +182,10 @@ padding: 1rem 0rem;
     list-style: none;
     padding: 8px 0px;
 
+}
+
+@media screen and (max-width:768px){
+    .product-section3{
+        flex-direction: column;
+    }
 }

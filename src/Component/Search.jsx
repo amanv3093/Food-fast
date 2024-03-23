@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 import './Search.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 function Search() {
     //https://www.themealdb.com/api/json/v1/1/search.php?s=burger
     let [inputValue , setInputValue] = useState('')
     let [searchData , setSearchData] = useState([]);
+    let[showMenu , setShowMenu] = useState(false)
+    const navigate = useNavigate();
     
     let handelFoodText = (e) =>{
         setInputValue(e.target.value);
-        console.log(e.target.value);
+        
     }
 
     let handelSearch = () =>{
@@ -17,12 +19,20 @@ function Search() {
             let response = await Fetch.json();
             setSearchData(response);
             console.log(response);
+            navigate('/')
+            
         }
         foodItem();
     }
 
+    let menuShow = () =>{
+        setShowMenu(prevShowMenu => !prevShowMenu);
+    }
+    console.log(searchData);
+
+
   return (
-    <div className='main'>
+   <>
         <div className='navbar'>
             <header> 
                 <div className='food-logo'> 
@@ -35,24 +45,24 @@ function Search() {
                 </div>
     
                 <div className='menu'>
-                    <span class="material-symbols-outlined menu-logo">menu</span>
-                    <div className='menu-box'>
-                    <span class="material-symbols-outlined close">close</span>
+                    <span class="material-symbols-outlined menu-logo" onClick={menuShow}>menu</span>
+                        <div className={`menu-box ${showMenu === true ? 'menu-show' : ''}`} >
+                    <span class="material-symbols-outlined close" onClick={menuShow}>close</span>
                         <ul>
-                            <li>Beef</li>
-                            <li>Chicken</li>
-                            <li>Dessert</li>
-                            <li>Lamb</li>
-                            <li>Miscellaneous</li>
-                            <li>Pasta</li>
-                            <li>Pork</li>
-                            <li>Seafood</li>
-                            <li>Side</li>
-                            <li>Starter</li>
-                            <li>Vegan</li>
-                            <li>Vegetarian</li>
-                            <li>Breakfast</li>
-                            <li>Goat</li>
+                            <li><NavLink  to={`/subcategory/Beef`}>Beef</NavLink></li>
+                            <li><NavLink to={`/subcategory/Chicken`}>Chicken</NavLink></li>
+                            <li><NavLink to={`/subcategory/Dessert`}>Dessert</NavLink></li>
+                            <li><NavLink to={`/subcategory/Lamb`}>Lamb</NavLink></li>
+                            <li><NavLink to={`/subcategory/Miscellaneous`}>Miscellaneous</NavLink></li>
+                            <li><NavLink to={`/subcategory/Pasta`}>Pasta</NavLink></li>
+                            <li><NavLink to={`/subcategory/Pork`}>Pork</NavLink></li>
+                            <li><NavLink to={`/subcategory/Seafood`}>Seafood</NavLink></li>
+                            <li><NavLink to={`/subcategory/Starter`}>Side</NavLink></li>
+                            <li><NavLink to={`/subcategory/Starter`}>Starter</NavLink></li>
+                            <li><NavLink to={`/subcategory/Vegan`}>Vegan</NavLink></li>
+                            <li><NavLink to={`/subcategory/Vegetarian`}>Vegetarian</NavLink></li>
+                            <li><NavLink to={`/subcategory/Breakfast`}>Breakfast</NavLink></li>
+                            <li><NavLink to={`/subcategory/Goat`}>Goat</NavLink></li>
     
                         </ul>
     
@@ -65,12 +75,16 @@ function Search() {
         </div>
 
         <div className='search-box'>
+            
             <div className='search-input-box'>
                 <input type='text' placeholder='Search recipes here' onChange={handelFoodText}/>
                 <span class="material-symbols-outlined Search-icon" onClick={handelSearch}>search</span>
+                
             </div>
+           
             <h2>What are your favorite cuisines?</h2>
             <p>PERSONALIZE YOUR EXPERIENCE</p>
+            
         </div>
       
         
@@ -97,7 +111,7 @@ function Search() {
 
         </div>:<></>
     }
-    </div>
+    </>
   )
 }
 
